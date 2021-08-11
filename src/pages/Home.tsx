@@ -1,6 +1,5 @@
 import { IonText, IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCol } from '@ionic/react';
 import React, { useState } from 'react';
-
 import './Home.css';
 
 const Home: React.FC = () => {
@@ -76,10 +75,10 @@ const Home: React.FC = () => {
       <IonGrid>
           <IonRow>
             <IonCol>
-                <IonText>{text}</IonText>
+                <IonText style={{fontSize: 30}}>{text}</IonText>
             </IonCol>
             <IonCol>
-                <IonButton onClick={()=>{clean()}} expand="block"  >clean</IonButton>
+                <IonButton onClick={()=>{clean()}} expand="block" color="tertiary">clean</IonButton>
             </IonCol>
           </IonRow>
           <IonRow>
@@ -117,27 +116,27 @@ const Home: React.FC = () => {
           </IonRow>
         <IonRow>
             <IonCol>
-                <IonButton onClick={()=>{setNum1(0)}} shape="round" expand="block"  >0</IonButton>
+                <IonButton onClick={()=>{setNum1(0)}} shape="round" expand="block" >0</IonButton>
             </IonCol>
           <IonCol>
-              <IonButton onClick={()=>{add()}} expand="block"  >+</IonButton>
+              <IonButton onClick={()=>{add()}} expand="block" color="tertiary">+</IonButton>
           </IonCol>
           <IonCol>
-              <IonButton onClick={()=>{subtract()}} expand="block"  >-</IonButton>
+              <IonButton onClick={()=>{subtract()}} expand="block" color="tertiary">-</IonButton>
           </IonCol>
 
         </IonRow>
           <IonRow>
               <IonCol>
-                  <IonButton onClick={()=>{prod()}} expand="block"  >*</IonButton>
+                  <IonButton onClick={()=>{prod()}} expand="block" color="tertiary">*</IonButton>
               </IonCol>
               <IonCol>
-                  <IonButton onClick={()=>{div()}} expand="block"  >/</IonButton>
+                  <IonButton onClick={()=>{div()}} expand="block" color="tertiary">/</IonButton>
               </IonCol>
           </IonRow>
           <IonRow>
               <IonCol>
-                  <IonButton onClick={()=>{equal()}} expand="block"  >=</IonButton>
+                  <IonButton onClick={()=>{equal()}} expand="block" color="tertiary">=</IonButton>
               </IonCol>
           </IonRow>
         </IonGrid>
